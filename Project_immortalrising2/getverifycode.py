@@ -6,8 +6,9 @@ import re
 def read_email_from_certik(username, password,
                            imap_server='imap.firstmail.ltd',
                            imap_port=993,
-                           expected_sender='no-reply@certik.com'):
-    """
+                           expected_sender='hello@passport.e.immutable.com'):
+    """<hello@passport.e.immutable.com>
+    'no-reply@certik.com'
     读取特定发件人的邮件内容
 
     :param username: 邮箱账号
@@ -24,6 +25,7 @@ def read_email_from_certik(username, password,
 
         # 选择收件箱
         mail.select('inbox')
+
 
         # 搜索所有邮件
         _, search_data = mail.search(None, 'ALL')
@@ -99,8 +101,8 @@ def read_email_from_certik(username, password,
 # 使用示例
 if __name__ == "__main__":
     # 替换为你的实际邮箱和密码
-    username = 'kmtsahqa@zorrodemail.com'
-    password = 'phcqraoaA2325'
+    username = 'ovtrzpyu@esponamail.com'
+    password = 'xeibdbncY4994'
 
     # 读取邮件
     email_content = read_email_from_certik(username, password)
