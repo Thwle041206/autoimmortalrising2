@@ -1,6 +1,8 @@
 
 '''
+update SignUpReferal
 Status: Run 70%
+Currently: I cant not import the getverifycode and extract the code number to automatical fill in the blank
 '''
 import time
 import os
